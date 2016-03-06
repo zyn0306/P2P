@@ -3,7 +3,7 @@
  *  corresponding variables.
  */
 import java.io.*;
-import java.util.Scanner;
+import java.util.*;
 
 
 public class ReadCommonConfig {
@@ -52,5 +52,29 @@ public class ReadCommonConfig {
 		/*System.out.println(numberOfPreferredNeighbors + " " + unchokingInterval + " " + optimisticUnchokingInterval + 
 		 *	" " + fileName + " " + fileSize + " " + pieceSize);
 		 */
+	}
+
+	public int getNumberOfPreferredNeighbors() {
+		return numberOfPreferredNeighbors;
+	}
+
+	public int getUnchokingInterval() {
+		return unchokingInterval;
+	}
+
+	public int getOptimisticUnchokingInterval() {
+		return optimisticUnchokingInterval;
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public long getFileSize() {
+		return fileSize;
+	}
+
+	public int getPieceSize() {
+		return pieceSize;
 	}
 }
