@@ -17,4 +17,16 @@ public class RemotePeerInfo {
 		peerAddress = pAddress;
 		peerPort = pPort;
 	}
+
+	public int getPeerId() {
+		return Integer.parseInt(peerId);
+	}
+
+	public String getPeerAddress() {
+		return peerAddress;
+	}
+
+	public int peerPort() {
+		return Integer.parseInt(peerPort);
+	}
 }
