@@ -11,9 +11,9 @@ public class RemotePeerInfo {
 	public String peerId;
 	public String peerAddress;
 	public String peerPort;
-	public boolean hasFile;
+	public String hasFile;
 	
-	public RemotePeerInfo(String pId, String pAddress, String pPort, int hFile) {
+	public RemotePeerInfo(String pId, String pAddress, String pPort, String hFile) {
 		peerId = pId;
 		peerAddress = pAddress;
 		peerPort = pPort;
@@ -33,6 +33,6 @@ public class RemotePeerInfo {
 	}
 
 	public boolean getHasFile() {
-		return hasFile;
+		return hasFile ==  "1" ? true : false;
 	}
 }

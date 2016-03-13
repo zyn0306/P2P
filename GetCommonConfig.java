@@ -6,7 +6,7 @@ import java.io.*;
 import java.util.*;
 
 
-public class ReadCommonConfig {
+public class GetCommonConfig {
 	private static int numberOfPreferredNeighbors;
 	private static int unchokingInterval;
 	private static int optimisticUnchokingInterval;
@@ -16,7 +16,7 @@ public class ReadCommonConfig {
 	private static final String CONFIG_FILE = "Common.cfg";
 	
 	//public static void main(String[] args) throws IOException {
-	public ReadCommonConfig() throws IOException{
+	public GetCommonConfig() throws IOException {
 		Scanner reader = new Scanner(new FileInputStream(CONFIG_FILE));
 		String s = new String();
 		while (reader.hasNext()) {
